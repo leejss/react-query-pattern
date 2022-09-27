@@ -1,9 +1,9 @@
-import PostList from "../components/PostList";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
     <div>
-      <PostList />
+      <Link href="/posts">Posts</Link>
     </div>
   );
 };

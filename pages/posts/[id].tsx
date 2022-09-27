@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-import Post from "../components/Post";
-import { usePostByIdQuery } from "../components/postQuery";
+import Post from "../../components/post/Post";
+import { usePostByIdQuery } from "../../components/post/postQuery";
 
 const PostPage = () => {
   const router = useRouter();
