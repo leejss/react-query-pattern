@@ -16,12 +16,12 @@ const PostList = () => {
       {postQuery.isLoading && <h2 className="text-5xl">Loading...</h2>}
       {postQuery.isSuccess && (
         <>
-          <ol className="flex flex-col gap-4 list-decimal pl-4">
+          <ol className="flex flex-col gap-4 list-decimal pl-10">
             {postQuery.data.map((d: any) => {
               return (
-                <Link key={d.id} href={`/${d.id}`}>
+                <Link key={d.id} href={`/posts/${d.id}`}>
                   <li
-                    className="outline p-2"
+                    className="text-2xl cursor-pointer hover:underline"
                     onMouseEnter={async () => {
                       await queryClient.prefetchQuery(
                         ["post", `${d.id}`],
@@ -49,7 +49,7 @@ const PostList = () => {
             setPage((prev) => prev - 1);
           }}
         >
-          Down
+          ➖
         </button>
         <p className="text-3xl">{page}</p>
         <button
@@ -58,7 +58,7 @@ const PostList = () => {
             setPage((prev) => prev + 1);
           }}
         >
-          Up
+          ➕
         </button>
       </div>
     </div>
