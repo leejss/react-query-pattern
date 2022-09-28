@@ -12,6 +12,7 @@ const PostPage = () => {
   if (postQuery.isLoading) {
     return <h1>Loading...</h1>;
   }
+
   return (
     <div>
       <Post

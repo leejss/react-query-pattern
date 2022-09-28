@@ -4,9 +4,9 @@
 
 1. Prefetching
 2. Pagination
+3. Mutation
 
 ### Todo 🟠
 
-1. Mutation
-2. Optimistic Update (aka Optimistic UI)
-3. Error handling
+1. Optimistic Update (aka Optimistic UI)
+2. Error handling

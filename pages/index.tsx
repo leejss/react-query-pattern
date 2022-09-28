@@ -6,6 +6,9 @@ const HomePage = () => {
       <Link href="/posts">
         <h1 className="text-6xl">Posts</h1>
       </Link>
+      <Link href="/words">
+        <h1 className="text-6xl">Words</h1>
+      </Link>
     </div>
   );
 };

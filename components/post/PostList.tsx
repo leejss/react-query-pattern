@@ -7,7 +7,6 @@ import { usePostsQuery } from "./postsQuery";
 const PostList = () => {
   const [page, setPage] = useState(1);
   const postQuery = usePostsQuery(page);
-
   const queryClient = useQueryClient();
 
   return (
@@ -22,6 +21,7 @@ const PostList = () => {
                 <Link key={d.id} href={`/posts/${d.id}`}>
                   <li
                     className="text-2xl cursor-pointer hover:underline"
+                    // Prefetching
                     onMouseEnter={async () => {
                       await queryClient.prefetchQuery(
                         ["post", `${d.id}`],
