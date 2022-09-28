@@ -8,5 +8,4 @@
 
 ### Todo 🟠
 
-1. Optimistic Update (aka Optimistic UI)
-2. Error handling
+1. Error handling
